@@ -64,3 +64,30 @@ body {
 	 font-size: calc(var(--oneThird) / 1.1);
 	 
 }
+#container > div[marked="player"] > div:before {
+	content: "+";
+	color: green;
+	transform: rotate(45deg);
+}
+#container > div[marked="machine"] > div:before {
+	content: "+";
+}
+#container > div[empty="no"] > div {
+	border-color: gray white white gray;
+	background-color: transparent;
+	cursor:default;
+}
+#headboard {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2px;
+	height: 30px;
+	overflow: hidden;
+}
+h1 {
+	margin: 0;
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: normal;
+	transition: 0.4s;
+}
