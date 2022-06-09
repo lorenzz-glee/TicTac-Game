@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body style="background-color:red;">
+<style>
+#ticTacToe #goTic{
+	color: black;
+	font-size: 20px;
+}
+
+.ticMain{
+	margin: 50px auto;
+	height: 240px;
+	width: 240px;
+	background-color: white;
+	color: white;
+}
+
+td{
+  background-color: #2a313d;
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  border-radius: 20px;
+
+  border: 8px solid white;
+}
+
+td:hover{
+	background-color: #525c6b;
+}
+</style>
+
+
+
+<section id="ticTacToe">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1>TicTacToe</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<input type="button" onclick="startTic()" value="start">
+						<input type="text" id="timeTic" value="">
+						<p id="goTic"> </p>
+						<div class="ticMain">
+							<table>
+								<tr>
+									<td id="box0"></td>
+									<td id="box1"></td>
+									<td id="box2"></td>
+								</tr>
+
+								<tr>
+									<td id="box3"></td>
+									<td id="box4"></td>
+									<td id="box5"></td>
+								</tr>
+
+								<tr>
+									<td id="box6"></td>
+									<td id="box7"></td>
+									<td id="box8"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+</body>
+</html>
